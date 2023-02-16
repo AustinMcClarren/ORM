@@ -14,6 +14,11 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
+  req.params.id,{
+    include:[Category,Tag]
+  }
+  .then(catData =>  res.status(200).json(catData))
+  .catch(err=>  res.status(400).json(err))
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
 });
