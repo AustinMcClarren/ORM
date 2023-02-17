@@ -28,8 +28,6 @@ Create the database:
 - Navigate to the project's root folder, open a terminal, and log into mysql: mysql -u root 
 
 
-Once the server is running start Postman and reference the videos below to test queries:
-
 
 ## Questions
 
